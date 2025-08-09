@@ -1,38 +1,34 @@
 body {
-  background-color: black;
+  background-color: rgb(10, 20, 15);
   color: greenyellow;
-  font-family: monospace;
+  font-family: sans-serif;
   /* text-shadow: 0px 0px 8px greenyellow; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Orbitron";
+  font-optical-sizing: auto;
+  font-weight: 450;
+  border-bottom: 2px solid greenyellow;
 }
 
 h1 {
   font-size: 64px;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  border-left: 2px dashed greenyellow;
-  float: right;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 30px;
-  border-bottom: 2px dashed greenyellow;
   width: 50%;
 }
 
 h3 {
   font-size: 24px;
   text-align: center;
-  border-bottom: 2px dashed greenyellow;
   margin: 0px 8px 16px 8px;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Workbench", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 350;
-
+  height: 64px;
 }
 
 a {
@@ -50,7 +46,7 @@ div.preview {
   width: 256px;
   padding: 16px;
   margin: 16px;
-  border: 2px dashed greenyellow;
+  border: 2px solid greenyellow;
   border-radius: 16px;
   background-color: transparent;
   transition: all 250ms;
@@ -68,13 +64,6 @@ img.screenshot {
   transition: all 250ms;
 }
 
-@keyframes pulse {
-  from { scale: 100%; }
-  to { scale: 110%; }
-}
-
 img.screenshot:hover {
   border-radius: 0;
-  box-shadow: 0px 0px 16px greenyellow;
-  animation: pulse alternate 500ms linear infinite;
 }
