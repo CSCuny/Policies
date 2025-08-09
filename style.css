@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  color: greenyellow;
+  font-family: monospace;
+  /* text-shadow: 0px 0px 8px greenyellow; */
+}
+
+h1 {
+  font-size: 64px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  border-left: 2px dashed greenyellow;
+  float: right;
+}
+
+h2 {
+  font-size: 30px;
+  border-bottom: 2px dashed greenyellow;
+  width: 50%;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 2px dashed greenyellow;
+  margin: 0px 8px 16px 8px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Workbench", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 350;
+
+}
+
+a {
+  color: cyan;
+  text-shadow: 0px 0px 8px cyan;
+}
+
+div.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.preview {
+  width: 256px;
+  padding: 16px;
+  margin: 16px;
+  border: 2px dashed greenyellow;
+  border-radius: 16px;
+  background-color: transparent;
+  transition: all 250ms;
+}
+
+div.preview:hover {
+  box-shadow: 0px 0px 16px greenyellow inset;
+}
+
+img.screenshot {
+  display: block;
+  margin: auto;
+  width: 128px;
+  border-radius: 32px;
+  transition: all 250ms;
+}
+
+@keyframes pulse {
+  from { scale: 100%; }
+  to { scale: 110%; }
+}
+
+img.screenshot:hover {
+  border-radius: 0;
+  box-shadow: 0px 0px 16px greenyellow;
+  animation: pulse alternate 500ms linear infinite;
+}
